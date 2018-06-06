@@ -1,0 +1,19 @@
+uuid: f878b787-34ec-44ff-a002-6237bb746511
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_appl_fname
+    - profile.type.applicant
+id: profile.applicant.field_appl_fname
+field_name: field_appl_fname
+entity_type: profile
+bundle: applicant
+label: 'First Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

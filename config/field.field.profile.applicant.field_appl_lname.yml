@@ -1,0 +1,19 @@
+uuid: 1f881e99-ec77-4862-ad32-ffb9dc087b4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_appl_lname
+    - profile.type.applicant
+id: profile.applicant.field_appl_lname
+field_name: field_appl_lname
+entity_type: profile
+bundle: applicant
+label: 'Last Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
