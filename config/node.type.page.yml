@@ -1,7 +1,13 @@
 uuid: 848fe1f6-b913-46cb-8e56-9dc94ced4d5d
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - type_style
+third_party_settings:
+  type_style:
+    color: '#f57f17'
+    icon: web_asset
 _core:
   default_config_hash: KuyA4NHPXcmKAjRtwa0vQc2ZcyrUJy6IlS2TAyMNRbc
 name: 'Basic page'
