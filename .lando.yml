@@ -1,0 +1,11 @@
+name: strik-3
+recipe: pantheon
+config:
+  framework: drupal8
+  site: strik3
+  id: 8745c3dd-7938-4b3e-88ab-edc9518ad49b
+tooling:
+  drupal:
+    cmd:
+      - "/app/vendor/bin/drupal"
+      - "--root=/app/web"

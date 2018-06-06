@@ -1,259 +1,265 @@
 {
-    "name": "pantheon-systems/example-drops-8-composer",
-    "description": "Install drops-8 with Composer on Pantheon.",
-    "type": "project",
-    "license": "MIT",
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://packages.drupal.org/8"
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "desandro/masonry",
-                "type": "drupal-library",
-                "version": "4.2.0",
-                "dist": {
-                    "url": "https://github.com/desandro/masonry/archive/v4.2.0.zip",
-                    "type": "zip"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "desandro/imagesloaded",
-                "type": "drupal-library",
-                "version": "4.1.1",
-                "dist": {
-                    "url": "https://github.com/desandro/imagesloaded/archive/v4.1.1.zip",
-                    "type": "zip"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "enyo/dropzone",
-                "type": "drupal-library",
-                "version": "4.3.0",
-                "dist": {
-                    "url": "https://github.com/enyo/dropzone/archive/v4.3.0.zip",
-                    "type": "zip"
-                }
-            }
+  "name": "pantheon-systems/example-drops-8-composer",
+  "description": "Install drops-8 with Composer on Pantheon.",
+  "type": "project",
+  "license": "MIT",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "desandro/masonry",
+        "type": "drupal-library",
+        "version": "4.2.0",
+        "dist": {
+          "url": "https://github.com/desandro/masonry/archive/v4.2.0.zip",
+          "type": "zip"
         }
-    ],
-    "require": {
-        "composer/installers": "^1.0.20",
-        "cweagans/composer-patches": "^1.0",
-        "drupal-composer/drupal-scaffold": "^2.0.1",
-        "drupal/addanother": "^1.0@RC",
-        "drupal/admin_toolbar": "^1.21",
-        "drupal/adminimal_admin_toolbar": "^1.5",
-        "drupal/adminimal_theme": "^1.3",
-        "drupal/auto_entitylabel": "^2.1@beta",
-        "drupal/blazy": "^1.0@RC",
-        "drupal/block_class": "^1.0@alpha",
-        "drupal/block_styles": "^1.2",
-        "drupal/block_visibility_groups": "^1.1",
-        "drupal/captcha": "^1.0@beta",
-        "drupal/coffee": "^1.0@beta",
-        "drupal/cog": "^1.10",
-        "drupal/components": "^1.0",
-        "drupal/conditional_fields": "^1.0@alpha",
-        "drupal/config_direct_save": "^1.0",
-        "drupal/config_filter": "^1.1",
-        "drupal/config_ignore": "^2.1",
-        "drupal/config_installer": "^1.0",
-        "drupal/config_update": "^1.5",
-        "drupal/console": "^1.8",
-        "drupal/content_browser": "^1.0@alpha",
-        "drupal/core": "^8",
-        "drupal/ctools": "^3.0",
-        "drupal/devel": "^1.2",
-        "drupal/entity_browser": "^1.4",
-        "drupal/entity_browser_enhanced": "^1.0@RC",
-        "drupal/entity_embed": "^1.0@beta",
-        "drupal/entity_reference_views_select": "^1.1",
-        "drupal/entity_share": "^1.0@alpha",
-        "drupal/extlink": "^1.0",
-        "drupal/field_group": "^1.0",
-        "drupal/field_permissions": "^1.0@beta",
-        "drupal/file_browser": "^1.1",
-        "drupal/force_password_change": "^1.3",
-        "drupal/google_analytics": "^2.2",
-        "drupal/honeypot": "^1.27",
-        "drupal/imce": "^1.6",
-        "drupal/imce_rename_plugin": "^1.1",
-        "drupal/inline_entity_form": "^1.0@beta",
-        "drupal/jsonapi": "^1.4",
-        "drupal/link_attributes": "^1.1",
-        "drupal/linkit": "^4.3",
-        "drupal/material_admin": "^1.0@alpha",
-        "drupal/material_admin_support": "1.x-dev",
-        "drupal/media_entity": "1.x",
-        "drupal/media_entity_browser": "^2.0",
-        "drupal/menu_link_config": "^1.0@alpha",
-        "drupal/metatag": "^1.3",
-        "drupal/moderation_sidebar": "^1.0@beta",
-        "drupal/paragraphs": "^1.2",
-        "drupal/pathauto": "^1.0",
-        "drupal/protected_pages": "^1.0",
-        "drupal/rabbit_hole": "^1.0@beta",
-        "drupal/recaptcha": "^2.2",
-        "drupal/redirect": "^1.0",
-        "drupal/scheduler": "^1.0",
-        "drupal/search_api": "^1.5",
-        "drupal/search_api_page": "^1.0@alpha",
-        "drupal/search_kint": "^1.0",
-        "drupal/sidr": "^1.0",
-        "drupal/simple_block": "^1.0@beta",
-        "drupal/simple_gmap": "^1.4",
-        "drupal/simple_sitemap": "^2.11",
-        "drupal/slick_views": "^1.0@RC",
-        "drupal/superfish": "^1.2",
-        "drupal/svg_image_field": "^1.0",
-        "drupal/switch_page_theme": "^1.0",
-        "drupal/token": "^1.0",
-        "drupal/twig_tweak": "^1.9",
-        "drupal/twitter_block": "^2.1",
-        "drupal/video_embed_field": "^2.0",
-        "drupal/views_accordion": "^1.0",
-        "drupal/webform": "^5.0@beta",
-        "drupal/webform_views": "^5.0@alpha",
-        "drupal/yaml_content": "1.x",
-        "drush/drush": "~8",
-        "fourkitchens/emulsify": "^2.2",
-        "rvtraveller/qs-composer-installer": "^1.1",
-        "webflo/drupal-core-strict": "^8"
+      }
     },
-    "require-dev": {
-        "mikey179/vfsstream": "^1.2",
-        "behat/behat": "3.*",
-        "behat/mink": "^1.7",
-        "behat/mink-extension": "^2.2",
-        "behat/mink-goutte-driver": "^1.2",
-        "jcalderonzumba/gastonjs": "^1.0.2",
-        "jcalderonzumba/mink-phantomjs-driver": "^0.3.1",
-        "drupal/drupal-extension": "^3.1",
-        "drush-ops/behat-drush-endpoint": "^0.0.4",
-        "pantheon-systems/quicksilver-pushback": "~1",
-        "phpunit/phpunit": "^4.8",
-        "symfony/css-selector": "^2.8",
-        "desandro/imagesloaded": "^4.1.1",
-        "desandro/masonry": "^4.2.0",
-        "enyo/dropzone": "^4.3.0"
-    },
-    "conflict": {
-        "drupal/drupal": "*"
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "autoload": {
-        "classmap": [
-            "scripts/composer/ScriptHandler.php"
-        ]
-    },
-    "scripts": {
-        "build-assets": [
-            "@prepare-for-pantheon",
-            "composer install --optimize-autoloader"
-        ],
-        "lint": "find web/modules/custom web/themes/custom -name '*.php' -exec php -l {} \\;",
-        "code-sniff": "echo 'No code sniff step defined.'",
-        "unit-test": "echo 'No unit test step defined.'",
-        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
-        "prepare-for-pantheon": "DrupalProject\\composer\\ScriptHandler::prepareForPantheon",
-        "post-install-cmd": [
-            "@drupal-scaffold",
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
-        ],
-        "post-update-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
-        ],
-        "post-create-project-cmd": [
-            "@drupal-scaffold",
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
-        ]
-    },
-    "extra": {
-        "patches": {
-            "drupal/core": {
-                "Issue 2923634: Template suggestions for views https://www.drupal.org/project/drupal/issues/2923634": "https://www.drupal.org/files/issues/2018-04-07/2923634-43.patch",
-                "Issue 2118743 Twig debug": "https://www.drupal.org/files/issues/2118743-139-twig-debug-info.patch",
-                "Issue 2741429: calculateDependencies doesn't check $mode_entity if it is NULL": "https://www.drupal.org/files/issues/2741429.2.patch",
-                "Issue 2457999: Cannot use relationship for rendered entity on Views": "https://www.drupal.org/files/issues/2457999-164.patch"
-            },
-            "drupal/block_styles": {
-                "Issue 2725167": "https://www.drupal.org/files/issues/notice_undefined-2725167-3.patch"
-            },
-            "drupal/field_group": {
-                "patch 36": "https://www.drupal.org/files/issues/field-layout-support-2878359-36.patch"
-            },
-            "drupal/paragraphs": {
-                "patch 7": "https://www.drupal.org/files/issues/2907094_7_field_group_support.patch"
-            },
-            "drupal/webform_views": {
-                "patch 2": "https://www.drupal.org/files/issues/2945921-php-notice-2.patch"
-            },
-            "drupal/media_entity_browser": {
-                "Issue 2928275": "https://www.drupal.org/files/issues/2018-04-04/2928275-upload-widget-6.patch"
-            }
-        },
-        "installer-paths": {
-            "web/core": [
-                "type:drupal-core"
-            ],
-            "web/modules/contrib/{$name}": [
-                "type:drupal-module"
-            ],
-            "web/profiles/contrib/{$name}": [
-                "type:drupal-profile"
-            ],
-            "web/themes/contrib/{$name}": [
-                "type:drupal-theme"
-            ],
-            "drush/contrib/{$name}": [
-                "type:drupal-drush"
-            ],
-            "web/libraries/{$name}": [
-                "type:drupal-library",
-                "type:bower-asset",
-                "type:npm-asset"
-            ]
-        },
-        "build-env": {
-            "install-cms": [
-                "drush site-install standard --account-mail={account-mail} --account-name={account-name} --account-pass={account-pass} --site-mail={site-mail} --site-name={site-name} --yes",
-                "drush pm-enable config_direct_save simple_block --yes",
-                "drush pm-uninstall block_content --yes"
-            ],
-            "export-configuration": "drush config-export --yes"
-        },
-        "drupal-scaffold": {
-            "source": "https://raw.githubusercontent.com/pantheon-systems/drops-8/{version}/{path}",
-            "includes": [
-                "sites/default/default.services.pantheon.preproduction.yml",
-                "sites/default/settings.pantheon.php"
-            ],
-            "excludes": [
-                ".csslintrc",
-                ".editorconfig",
-                ".eslintignore",
-                ".eslintrc.json",
-                ".htaccess",
-                "web.config"
-            ]
+    {
+      "type": "package",
+      "package": {
+        "name": "desandro/imagesloaded",
+        "type": "drupal-library",
+        "version": "4.1.1",
+        "dist": {
+          "url": "https://github.com/desandro/imagesloaded/archive/v4.1.1.zip",
+          "type": "zip"
         }
+      }
     },
-    "config": {
-        "optimize-autoloader": true,
-        "preferred-install": "dist",
-        "sort-packages": true,
-        "platform": {
-            "php": "7.1"
+    {
+      "type": "package",
+      "package": {
+        "name": "enyo/dropzone",
+        "type": "drupal-library",
+        "version": "4.3.0",
+        "dist": {
+          "url": "https://github.com/enyo/dropzone/archive/v4.3.0.zip",
+          "type": "zip"
         }
+      }
     }
+  ],
+  "require": {
+    "composer/installers": "^1.0.20",
+    "cweagans/composer-patches": "^1.0",
+    "drupal-composer/drupal-scaffold": "^2.0.1",
+    "drupal/addanother": "^1.0@RC",
+    "drupal/admin_toolbar": "^1.21",
+    "drupal/adminimal_admin_toolbar": "^1.5",
+    "drupal/adminimal_theme": "^1.3",
+    "drupal/auto_entitylabel": "^2.1@beta",
+    "drupal/blazy": "^1.0@RC",
+    "drupal/block_class": "^1.0@alpha",
+    "drupal/block_styles": "^1.2",
+    "drupal/block_visibility_groups": "^1.1",
+    "drupal/captcha": "^1.0@beta",
+    "drupal/coffee": "^1.0@beta",
+    "drupal/cog": "^1.10",
+    "drupal/components": "^1.0",
+    "drupal/conditional_fields": "^1.0@alpha",
+    "drupal/config_direct_save": "^1.0",
+    "drupal/config_filter": "^1.1",
+    "drupal/config_ignore": "^2.1",
+    "drupal/config_installer": "^1.0",
+    "drupal/config_update": "^1.5",
+    "drupal/console": "^1.8",
+    "drupal/content_browser": "^1.0@alpha",
+    "drupal/core": "^8",
+    "drupal/ctools": "^3.0",
+    "drupal/devel": "^1.2",
+    "drupal/entity_browser": "^1.4",
+    "drupal/entity_browser_enhanced": "^1.0@RC",
+    "drupal/entity_embed": "^1.0@beta",
+    "drupal/entity_reference_views_select": "^1.1",
+    "drupal/entity_share": "^1.0@alpha",
+    "drupal/extlink": "^1.0",
+    "drupal/field_group": "^1.0",
+    "drupal/field_permissions": "^1.0@beta",
+    "drupal/file_browser": "^1.1",
+    "drupal/force_password_change": "^1.3",
+    "drupal/google_analytics": "^2.2",
+    "drupal/graphql": "^3.0@beta",
+    "drupal/graphql_mutation": "1.x-dev",
+    "drupal/graphql_views": "^3.0@alpha",
+    "drupal/honeypot": "^1.27",
+    "drupal/imce": "^1.6",
+    "drupal/imce_rename_plugin": "^1.1",
+    "drupal/inline_entity_form": "^1.0@beta",
+    "drupal/jsonapi": "^1.4",
+    "drupal/link_attributes": "^1.1",
+    "drupal/linkit": "^4.3",
+    "drupal/material_admin": "^1.0@alpha",
+    "drupal/material_admin_support": "1.x-dev",
+    "drupal/media_entity": "1.x",
+    "drupal/media_entity_browser": "^2.0",
+    "drupal/menu_link_config": "^1.0@alpha",
+    "drupal/metatag": "^1.3",
+    "drupal/moderation_sidebar": "^1.0@beta",
+    "drupal/paragraphs": "^1.2",
+    "drupal/pathauto": "^1.0",
+    "drupal/profile": "^1.0@RC",
+    "drupal/protected_pages": "^1.0",
+    "drupal/rabbit_hole": "^1.0@beta",
+    "drupal/recaptcha": "^2.2",
+    "drupal/redirect": "^1.0",
+    "drupal/scheduler": "^1.0",
+    "drupal/search_api": "^1.5",
+    "drupal/search_api_page": "^1.0@alpha",
+    "drupal/search_kint": "^1.0",
+    "drupal/sidr": "^1.0",
+    "drupal/simple_block": "^1.0@beta",
+    "drupal/simple_gmap": "^1.4",
+    "drupal/simple_sitemap": "^2.11",
+    "drupal/slick_views": "^1.0@RC",
+    "drupal/superfish": "^1.2",
+    "drupal/svg_image_field": "^1.0",
+    "drupal/switch_page_theme": "^1.0",
+    "drupal/token": "^1.0",
+    "drupal/twig_components": "1.x-dev",
+    "drupal/twig_tweak": "^1.9",
+    "drupal/twitter_block": "^2.1",
+    "drupal/video_embed_field": "^2.0",
+    "drupal/views_accordion": "^1.0",
+    "drupal/webform": "^5.0@beta",
+    "drupal/webform_views": "^5.0@alpha",
+    "drupal/yaml_content": "1.x",
+    "drush/drush": "~8",
+    "fourkitchens/emulsify": "^2.3",
+    "rvtraveller/qs-composer-installer": "^1.1",
+    "webflo/drupal-core-strict": "^8"
+  },
+  "require-dev": {
+    "mikey179/vfsstream": "^1.2",
+    "behat/behat": "3.*",
+    "behat/mink": "^1.7",
+    "behat/mink-extension": "^2.2",
+    "behat/mink-goutte-driver": "^1.2",
+    "jcalderonzumba/gastonjs": "^1.0.2",
+    "jcalderonzumba/mink-phantomjs-driver": "^0.3.1",
+    "drupal/drupal-extension": "^3.1",
+    "drush-ops/behat-drush-endpoint": "^0.0.4",
+    "pantheon-systems/quicksilver-pushback": "~1",
+    "phpunit/phpunit": "^4.8",
+    "symfony/css-selector": "^2.8",
+    "desandro/imagesloaded": "^4.1.1",
+    "desandro/masonry": "^4.2.0",
+    "enyo/dropzone": "^4.3.0"
+  },
+  "conflict": {
+    "drupal/drupal": "*"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "classmap": [
+      "scripts/composer/ScriptHandler.php"
+    ]
+  },
+  "scripts": {
+    "build-assets": [
+      "@prepare-for-pantheon",
+      "composer install --optimize-autoloader"
+    ],
+    "lint": "find web/modules/custom web/themes/custom -name '*.php' -exec php -l {} \\;",
+    "code-sniff": "echo 'No code sniff step defined.'",
+    "unit-test": "echo 'No unit test step defined.'",
+    "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+    "prepare-for-pantheon": "DrupalProject\\composer\\ScriptHandler::prepareForPantheon",
+    "post-install-cmd": [
+      "@drupal-scaffold",
+      "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
+      "cd web/modules/contrib/twig_components && ./scripts/copyfiles.sh web"
+    ],
+    "post-update-cmd": [
+      "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+    ],
+    "post-create-project-cmd": [
+      "@drupal-scaffold",
+      "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+    ]
+  },
+  "extra": {
+    "patches": {
+      "drupal/core": {
+        "Issue 2923634: Template suggestions for views https://www.drupal.org/project/drupal/issues/2923634": "https://www.drupal.org/files/issues/2018-04-07/2923634-43.patch",
+        "Issue 2118743 Twig debug": "https://www.drupal.org/files/issues/2118743-139-twig-debug-info.patch",
+        "Issue 2741429: calculateDependencies doesn't check $mode_entity if it is NULL": "https://www.drupal.org/files/issues/2741429.2.patch",
+        "Issue 2457999: Cannot use relationship for rendered entity on Views": "https://www.drupal.org/files/issues/2457999-164.patch"
+      },
+      "drupal/block_styles": {
+        "Issue 2725167": "https://www.drupal.org/files/issues/notice_undefined-2725167-3.patch"
+      },
+      "drupal/field_group": {
+        "patch 36": "https://www.drupal.org/files/issues/field-layout-support-2878359-36.patch"
+      },
+      "drupal/paragraphs": {
+        "patch 7": "https://www.drupal.org/files/issues/2907094_7_field_group_support.patch"
+      },
+      "drupal/webform_views": {
+        "patch 2": "https://www.drupal.org/files/issues/2945921-php-notice-2.patch"
+      },
+      "drupal/media_entity_browser": {
+        "Issue 2928275": "https://www.drupal.org/files/issues/2018-04-04/2928275-upload-widget-6.patch"
+      }
+    },
+    "installer-paths": {
+      "web/core": [
+        "type:drupal-core"
+      ],
+      "web/modules/contrib/{$name}": [
+        "type:drupal-module"
+      ],
+      "web/profiles/contrib/{$name}": [
+        "type:drupal-profile"
+      ],
+      "web/themes/contrib/{$name}": [
+        "type:drupal-theme"
+      ],
+      "drush/contrib/{$name}": [
+        "type:drupal-drush"
+      ],
+      "web/libraries/{$name}": [
+        "type:drupal-library",
+        "type:bower-asset",
+        "type:npm-asset"
+      ]
+    },
+    "build-env": {
+      "install-cms": [
+        "drush site-install standard --account-mail={account-mail} --account-name={account-name} --account-pass={account-pass} --site-mail={site-mail} --site-name={site-name} --yes",
+        "drush pm-enable config_direct_save simple_block --yes",
+        "drush pm-uninstall block_content --yes"
+      ],
+      "export-configuration": "drush config-export --yes"
+    },
+    "drupal-scaffold": {
+      "source": "https://raw.githubusercontent.com/pantheon-systems/drops-8/{version}/{path}",
+      "includes": [
+        "sites/default/default.services.pantheon.preproduction.yml",
+        "sites/default/settings.pantheon.php"
+      ],
+      "excludes": [
+        ".csslintrc",
+        ".editorconfig",
+        ".eslintignore",
+        ".eslintrc.json",
+        ".htaccess",
+        "web.config"
+      ]
+    }
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "platform": {
+      "php": "7.1"
+    }
+  }
 }
