@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "095f9e354f3f780afcbdaac14e671677",
+    "content-hash": "60960131b88536393993009bfb6b9c51",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3650,64 +3650,6 @@
             }
         },
         {
-            "name": "drupal/entity_reference_revisions",
-            "version": "1.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/entity_reference_revisions",
-                "reference": "8.x-1.5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity_reference_revisions-8.x-1.5.zip",
-                "reference": "8.x-1.5",
-                "shasum": "417250a105afe8febef508c7f981d02cb138752d"
-            },
-            "require": {
-                "drupal/core": "~8.0"
-            },
-            "require-dev": {
-                "drupal/diff": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.5",
-                    "datestamp": "1527241084",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Frans",
-                    "homepage": "https://www.drupal.org/user/514222"
-                },
-                {
-                    "name": "jeroen.b",
-                    "homepage": "https://www.drupal.org/user/1853532"
-                },
-                {
-                    "name": "miro_dietiker",
-                    "homepage": "https://www.drupal.org/user/227761"
-                }
-            ],
-            "description": "Adds a Entity Reference field type with revision support.",
-            "homepage": "https://www.drupal.org/project/entity_reference_revisions",
-            "support": {
-                "source": "http://cgit.drupalcode.org/entity_reference_revisions"
-            }
-        },
-        {
             "name": "drupal/entity_reference_views_select",
             "version": "1.3.0",
             "source": {
@@ -4728,57 +4670,6 @@
             }
         },
         {
-            "name": "drupal/material_admin",
-            "version": "1.0.0-alpha6",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/material_admin",
-                "reference": "8.x-1.0-alpha6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/material_admin-8.x-1.0-alpha6.zip",
-                "reference": "8.x-1.0-alpha6",
-                "shasum": "e68cc84fb5d043636324fe547908e4c98a0a61f6"
-            },
-            "require": {
-                "drupal/core": "~8.0"
-            },
-            "type": "drupal-theme",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-alpha6",
-                    "datestamp": "1520698984",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Bcwald",
-                    "homepage": "https://www.drupal.org/user/215794"
-                },
-                {
-                    "name": "samuel.mortenson",
-                    "homepage": "https://www.drupal.org/user/2582268"
-                }
-            ],
-            "description": "Material Design Admin Theme",
-            "homepage": "https://www.drupal.org/project/material_admin",
-            "support": {
-                "source": "http://cgit.drupalcode.org/material_admin"
-            }
-        },
-        {
             "name": "drupal/material_admin_support",
             "version": "dev-1.x",
             "source": {
@@ -5170,89 +5061,6 @@
             "homepage": "https://www.drupal.org/project/moderation_sidebar",
             "support": {
                 "source": "http://cgit.drupalcode.org/moderation_sidebar"
-            }
-        },
-        {
-            "name": "drupal/paragraphs",
-            "version": "1.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/paragraphs",
-                "reference": "8.x-1.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/paragraphs-8.x-1.3.zip",
-                "reference": "8.x-1.3",
-                "shasum": "24c6d2153127f9d783a03c05baf3b9beb219113f"
-            },
-            "require": {
-                "drupal/core": "~8",
-                "drupal/entity_reference_revisions": "~1.3"
-            },
-            "require-dev": {
-                "drupal/block_field": "~1.0",
-                "drupal/ctools": "3.x-dev",
-                "drupal/diff": "~1.0",
-                "drupal/entity_browser": "1.x-dev",
-                "drupal/entity_usage": "2.x-dev",
-                "drupal/field_group": "~1.0",
-                "drupal/inline_entity_form": "~1.0",
-                "drupal/paragraphs-paragraphs_library": "*",
-                "drupal/replicate": "~1.0",
-                "drupal/search_api": "~1.0",
-                "drupal/search_api_db": "*"
-            },
-            "suggest": {
-                "drupal/entity_browser": "Recommended for an improved user experience when using the Paragraphs library module"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.3",
-                    "datestamp": "1527502684",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                },
-                "patches_applied": {
-                    "patch 7": "https://www.drupal.org/files/issues/2907094_7_field_group_support.patch"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Berdir",
-                    "homepage": "https://www.drupal.org/user/214652"
-                },
-                {
-                    "name": "Frans",
-                    "homepage": "https://www.drupal.org/user/514222"
-                },
-                {
-                    "name": "Primsi",
-                    "homepage": "https://www.drupal.org/user/282629"
-                },
-                {
-                    "name": "jeroen.b",
-                    "homepage": "https://www.drupal.org/user/1853532"
-                },
-                {
-                    "name": "miro_dietiker",
-                    "homepage": "https://www.drupal.org/user/227761"
-                }
-            ],
-            "description": "Enables the creation of Paragraphs entities.",
-            "homepage": "https://www.drupal.org/project/paragraphs",
-            "support": {
-                "source": "http://cgit.drupalcode.org/paragraphs"
             }
         },
         {
@@ -12429,7 +12237,6 @@
         "drupal/graphql_mutation": 20,
         "drupal/graphql_views": 15,
         "drupal/inline_entity_form": 10,
-        "drupal/material_admin": 15,
         "drupal/material_admin_support": 20,
         "drupal/menu_link_config": 15,
         "drupal/moderation_sidebar": 10,
