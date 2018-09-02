@@ -1,38 +1,38 @@
 <?php
-
 /**
- * Load services definition file.
+ * @file
+ * Platform.sh example settings.php file for Drupal 8.
  */
-$settings['container_yamls'][] = __DIR__ . '/services.yml';
-
-/**
- * Include the Pantheon-specific settings file.
- *
- * n.b. The settings.pantheon.php file makes some changes
- *      that affect all envrionments that this site
- *      exists in.  Always include this file, even in
- *      a local development environment, to ensure that
- *      the site settings remain consistent.
- */
-include __DIR__ . "/settings.pantheon.php";
-
-/**
- * Place the config directory outside of the Drupal root.
- */
-$config_directories = array(
-  CONFIG_SYNC_DIRECTORY => dirname(DRUPAL_ROOT) . '/config',
-);
-
-/**
- * If there is a local settings file, then include it
- */
-$local_settings = __DIR__ . "/settings.local.php";
-if (file_exists($local_settings)) {
-  include $local_settings;
+// Default Drupal 8 settings.
+//
+// These are already explained with detailed comments in Drupal's
+// default.settings.php file.
+//
+// See https://api.drupal.org/api/drupal/sites!default!default.settings.php/8
+$databases = [];
+$config_directories = [];
+$settings['update_free_access'] = FALSE;
+$settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
+$settings['file_scan_ignore_directories'] = [
+  'node_modules',
+  'bower_components',
+];
+// The hash_salt should be a unique random value for each application.
+// If left unset, the settings.platformsh.php file will attempt to provide one.
+// You can also provide a specific value here if you prefer and it will be used
+// instead. In most cases it's best to leave this blank on Platform.sh. You
+// can configure a separate hash_salt in your settings.local.php file for
+// local development.
+// $settings['hash_salt'] = 'change_me';
+// Set up a config sync directory.
+//
+// This is defined inside the read-only "config" directory, deployed via Git.
+$config_directories[CONFIG_SYNC_DIRECTORY] = '../config/sync';
+// Automatic Platform.sh settings.
+if (file_exists($app_root . '/' . $site_path . '/settings.platformsh.php')) {
+  include $app_root . '/' . $site_path . '/settings.platformsh.php';
 }
-
-/**
- * Always install the 'standard' profile to stop the installer from
- * modifying settings.php.
- */
-$settings['install_profile'] = 'standard';
+// Local settings. These come last so that they can override anything.
+if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+  include $app_root . '/' . $site_path . '/settings.local.php';
+}
