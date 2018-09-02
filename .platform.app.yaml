@@ -82,10 +82,6 @@ web:
             allow: false
 
             # Rules for specific URI patterns.
-dependencies:   
-   nodejs:
-     gulp-cli: "*" # same here
-     yarn: "*"
             rules:
                 # Allow access to common static files.
                 '\.(jpe?g|png|gif|svgz?|css|js|map|ico|bmp|eot|woff2?|otf|ttf)$':
@@ -116,6 +112,10 @@ dependencies:
                 '^/sites/default/files/(css|js)':
                     expires: 2w
 
+dependencies:
+  nodejs:
+    gulp-cli: "*" # same here
+    yarn: "*"
 # The configuration of scheduled execution.
 crons:
     drupal:
