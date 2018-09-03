@@ -2,46 +2,51 @@
 
 # strik3: Pattern Lab + Drupal 8
 
-Component-driven prototyping tool using [Pattern Lab v2](http://patternlab.io/) automated via Gulp/NPM. Also serves as a starterkit Drupal 8 theme.
+Component-driven prototyping tool using [Pattern Lab v2](http://patternlab.io/) automated via Gulp/NPM. Also serves as _a starterkit_ Drupal 8 theme.
 
 ## Requirements
 
-  1. [Node (we recommend NVM)](https://github.com/creationix/nvm)
-  2. [Gulp](http://gulpjs.com/)
-  3. [Composer](https://getcomposer.org/)
-  4. Optional: [Yarn](https://github.com/yarnpkg/yarn)
+1.  [PHP 7.1](http://www.php.net/)
+2.  [Node (we recommend NVM)](https://github.com/creationix/nvm)
+3.  [Gulp](http://gulpjs.com/)
+4.  [Composer](https://getcomposer.org/)
+5.  Optional: [Yarn](https://github.com/yarnpkg/yarn)
 
-## Quickstart (strik3 Standalone)
+## Prototyping (separate from Drupal, Wordpress, etc.)
+
 strik3 supports both NPM and YARN.
 
 Install with NPM:
-`composer create-project fourkitchens/strik3 --stability dev --no-interaction strik3 && cd strik3 && npm install`
+`composer create-project fourkitchens/strik3:^2.0 --stability dev --no-interaction strik3 && cd strik3 && npm install`
 
 Install with Yarn:
-`composer create-project fourkitchens/strik3 --stability dev --no-interaction strik3 && cd strik3 && yarn install`
+`composer create-project fourkitchens/strik3:^2.0 --stability dev --no-interaction strik3 && cd strik3 && yarn install`
 
-## Drupal-specific installation
+## Drupal installation
 
 ### In a Composer-based Drupal install (recommended)
 
-  1. `composer require fourkitchens/strik3`
-  2. Enable strik3 and its dependencies `drush en strik3 components unified_twig_ext -y`
-  3. **Optional**: Create cloned theme `drush strik3 "THEME NAME"` (You may need to run `drush cc drush` to clear the drush cache. Also, you can run `drush help strik3` for other available options)
-  4. If you created a cloned theme, `cd web/themes/custom/THEME_NAME/`. If not, `cd web/themes/contrib/strik3/`
-  5. `npm install` or `yarn install`
-  6. If you created a cloned theme, disable the original strik3 theme `drush pmu strik3 -y` and enable your new theme in Drupal and set to default.
+1. Require strik3 in your project `composer require fourkitchens/strik3`
+2. Move into the original strik3 theme `cd web/themes/contrib/strik3/`
+3. Create your new theme by cloning strik3 `php strik3.php "THEME NAME"` (Run `php strik3.php -h` for other available options)
+4. Move into your theme directory `cd web/themes/custom/THEME_NAME/`
+5. Install the theme dependencies `npm install` or `yarn install`
+6. Enable your theme and its dependencies `drush then THEME_NAME -y && drush en components unified_twig_ext -y`
+7. Proceed to the "Starting Pattern Lab…" section below
 
 If you're not using a Composer-based Drupal install (e.g. tarball download from drupal.org) installation [instructions can be found on the Wiki](https://github.com/fourkitchens/strik3/wiki/Installation).
 
 Troubleshooting Installation: See [Drupal Installation FAQ](https://github.com/fourkitchens/strik3/wiki/Installation#drupal-installation-faq).
 
+_Note: Once you've created your custom theme, you can remove strik3 as a dependency of your project. If you'd like to get updates as we push them, solely for educational/best-practice information, feel free to leave it in and receive the updates. Updating strik3 will not affect your custom theme in any way._
+
 ## Starting Pattern Lab and watch task
 
 The `start` command spins up a local server, compiles everything (runs all required gulp tasks), and watches for changes.
 
-  1. `npm start` or `yarn start`
+1.  `npm start` or `yarn start`
 
-  ---
+---
 
 ## Highlighted Features
 
@@ -60,6 +65,7 @@ Forms, tables, video, accordion, cards, breadcrumbs, tabs, pager, status message
 View a [demo of these default strik3 components](https://fourkitchens.github.io/strik3/pattern-lab/public/).
 
 ## Documentation
+
 Documentation is currently provided in [the Wiki](https://github.com/fourkitchens/strik3/wiki). Here are a few basic links:
 
 #### General Orientation
