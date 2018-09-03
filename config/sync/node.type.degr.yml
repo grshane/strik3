@@ -1,0 +1,22 @@
+uuid: 0cdadf51-7ab3-4636-a02d-e489c9621930
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - type_style
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  type_style:
+    color: '#000000'
+    icon: ''
+name: Degree
+type: degr
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

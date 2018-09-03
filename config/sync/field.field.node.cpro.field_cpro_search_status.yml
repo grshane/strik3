@@ -1,0 +1,29 @@
+uuid: 81e92736-4b0f-417f-b82d-8717a6f75da5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cpro_search_status
+    - node.type.cpro
+    - taxonomy.vocabulary.search_status
+id: node.cpro.field_cpro_search_status
+field_name: field_cpro_search_status
+entity_type: node
+bundle: cpro
+label: 'Search Status'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      search_status: search_status
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

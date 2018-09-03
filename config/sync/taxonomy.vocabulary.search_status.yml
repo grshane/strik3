@@ -1,0 +1,15 @@
+uuid: 2aed0f94-56f6-494f-9a64-49772b7e88b6
+langcode: en
+status: true
+dependencies:
+  module:
+    - type_style
+third_party_settings:
+  type_style:
+    color: '#000000'
+    icon: ''
+name: 'Search Status'
+vid: search_status
+description: ''
+hierarchy: 0
+weight: 0

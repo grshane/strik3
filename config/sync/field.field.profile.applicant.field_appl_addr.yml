@@ -1,0 +1,34 @@
+uuid: 55ae8d1a-1c4e-4bef-8882-1637c02a5deb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_appl_addr
+    - profile.type.applicant
+  module:
+    - address
+id: profile.applicant.field_appl_addr
+field_name: field_appl_addr
+entity_type: profile
+bundle: applicant
+label: Address
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries:
+    US: US
+  langcode_override: ''
+  field_overrides:
+    additionalName:
+      override: optional
+    organization:
+      override: hidden
+    sortingCode:
+      override: hidden
+    dependentLocality:
+      override: hidden
+  fields: {  }
+field_type: address

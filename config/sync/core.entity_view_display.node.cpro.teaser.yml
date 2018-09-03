@@ -1,0 +1,18 @@
+uuid: 79388374-b2a9-415c-9031-94dd1f2c7640
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.cpro
+  module:
+    - user
+id: node.cpro.teaser
+targetEntityType: node
+bundle: cpro
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden: {  }

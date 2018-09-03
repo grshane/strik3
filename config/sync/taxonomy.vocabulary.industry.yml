@@ -1,0 +1,15 @@
+uuid: ad5fb058-1ade-40d6-bba3-acfdcf3c84c9
+langcode: en
+status: true
+dependencies:
+  module:
+    - type_style
+third_party_settings:
+  type_style:
+    color: '#000000'
+    icon: ''
+name: Industry
+vid: industry
+description: ''
+hierarchy: 0
+weight: 0

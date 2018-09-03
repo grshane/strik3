@@ -1,0 +1,21 @@
+uuid: 8f43c3aa-4d65-48ff-9600-80d9b460d47a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_appl_degr_type
+    - profile.type.applicant
+  module:
+    - options
+id: profile.applicant.field_appl_degr_type
+field_name: field_appl_degr_type
+entity_type: profile
+bundle: applicant
+label: 'Degree Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

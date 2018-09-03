@@ -1,0 +1,19 @@
+uuid: 58887774-0dfd-4aa0-bac2-fe15ed3e36d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_appl_degr_majo
+    - profile.type.applicant
+id: profile.applicant.field_appl_degr_majo
+field_name: field_appl_degr_majo
+entity_type: profile
+bundle: applicant
+label: 'Degree Major'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,20 @@
+uuid: 9345e3ed-ac7c-42c9-a004-2b58755a1cbc
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - profile
+id: profile.field_appl_comp_date
+field_name: field_appl_comp_date
+entity_type: profile
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

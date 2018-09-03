@@ -1,0 +1,21 @@
+uuid: 24d6182f-7935-428b-9940-d7cda74b02e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_appl_ustat
+    - profile.type.applicant
+  module:
+    - options
+id: profile.applicant.field_appl_ustat
+field_name: field_appl_ustat
+entity_type: profile
+bundle: applicant
+label: 'University State'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

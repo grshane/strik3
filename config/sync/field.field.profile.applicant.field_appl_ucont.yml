@@ -1,0 +1,22 @@
+uuid: 4688ada3-4222-40fe-ab08-a4cf4f983fc2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_appl_ucont
+    - profile.type.applicant
+  module:
+    - address
+id: profile.applicant.field_appl_ucont
+field_name: field_appl_ucont
+entity_type: profile
+bundle: applicant
+label: 'University Country'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries: {  }
+field_type: address_country

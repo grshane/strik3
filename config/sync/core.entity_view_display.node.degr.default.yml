@@ -1,0 +1,46 @@
+uuid: 4ccb35fb-8b68-4cc4-b3f9-90b31a19109a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.degr.field_degr_doc
+    - field.field.node.degr.field_degr_major
+    - field.field.node.degr.field_degr_univ_name
+    - node.type.degr
+  module:
+    - datetime
+    - user
+id: node.degr.default
+targetEntityType: node
+bundle: degr
+mode: default
+content:
+  field_degr_doc:
+    weight: 103
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_degr_major:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_degr_univ_name:
+    weight: 101
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

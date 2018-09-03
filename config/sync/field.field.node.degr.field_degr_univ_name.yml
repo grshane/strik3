@@ -1,0 +1,19 @@
+uuid: 5df95a04-2b99-40e5-8761-e8a3bb6b88f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_degr_univ_name
+    - node.type.degr
+id: node.degr.field_degr_univ_name
+field_name: field_degr_univ_name
+entity_type: node
+bundle: degr
+label: 'University Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,21 @@
+uuid: 3e7fe168-0463-443a-888f-369f88c9b154
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cpro_role
+    - node.type.cpro
+id: node.cpro.field_cpro_role
+field_name: field_cpro_role
+entity_type: node
+bundle: cpro
+label: Role
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

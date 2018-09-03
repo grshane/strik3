@@ -1,0 +1,21 @@
+uuid: 1029d738-5f32-425a-8c53-3b7337055de2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_appl_degr_comp
+    - profile.type.applicant
+  module:
+    - datetime
+id: profile.applicant.field_appl_degr_comp
+field_name: field_appl_degr_comp
+entity_type: profile
+bundle: applicant
+label: 'Degree Completion Date'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

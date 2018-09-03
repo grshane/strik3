@@ -1,0 +1,29 @@
+uuid: d0eba813-bd79-4a9b-9da1-a2768775d5ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cpro_contact_preference
+    - node.type.cpro
+    - taxonomy.vocabulary.contact_preference
+id: node.cpro.field_cpro_contact_preference
+field_name: field_cpro_contact_preference
+entity_type: node
+bundle: cpro
+label: 'Contact Preference'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      contact_preference: contact_preference
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

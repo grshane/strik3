@@ -1,0 +1,15 @@
+uuid: 8151ca27-e0ff-4db6-a0ab-700b97a732e3
+langcode: en
+status: true
+dependencies:
+  module:
+    - type_style
+third_party_settings:
+  type_style:
+    color: '#000000'
+    icon: ''
+name: 'Degree Award'
+vid: degree_award
+description: ''
+hierarchy: 0
+weight: 0

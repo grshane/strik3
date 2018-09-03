@@ -1,0 +1,28 @@
+uuid: d094ffe6-44a0-404d-a911-29c231c13a69
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cpro_degree
+    - node.type.cpro
+    - node.type.degr
+id: node.cpro.field_cpro_degree
+field_name: field_cpro_degree
+entity_type: node
+bundle: cpro
+label: Degree
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      degr: degr
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,18 @@
+uuid: b7493242-fdce-48ba-973b-82c64d14071f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.degr
+  module:
+    - user
+id: node.degr.teaser
+targetEntityType: node
+bundle: degr
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden: {  }

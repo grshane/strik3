@@ -1,0 +1,19 @@
+uuid: 517e6bac-ed16-4049-8552-c691f0eb631e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cpro_first_name
+    - node.type.cpro
+id: node.cpro.field_cpro_first_name
+field_name: field_cpro_first_name
+entity_type: node
+bundle: cpro
+label: 'First Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,19 @@
+uuid: e1c9d33a-b943-4fcc-b4a0-74ef34e8f160
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_appl_cjob
+    - profile.type.applicant
+id: profile.applicant.field_appl_cjob
+field_name: field_appl_cjob
+entity_type: profile
+bundle: applicant
+label: 'Current Job'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

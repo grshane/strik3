@@ -1,0 +1,33 @@
+uuid: 78485948-c2ff-49fd-8451-0eda81958e59
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - profile
+id: profile.field_appl_degr_type
+field_name: field_appl_degr_type
+entity_type: profile
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Associates
+      label: Associates
+    -
+      value: Bachelors
+      label: Bachelors
+    -
+      value: Doctorate
+      label: Doctorate
+    -
+      value: Masters
+      label: Masters
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

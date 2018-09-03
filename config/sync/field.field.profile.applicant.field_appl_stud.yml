@@ -1,0 +1,23 @@
+uuid: f81d6ee7-6a8d-47e3-8a4f-df5bae66c9e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_appl_stud
+    - profile.type.applicant
+id: profile.applicant.field_appl_stud
+field_name: field_appl_stud
+entity_type: profile
+bundle: applicant
+label: Student
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

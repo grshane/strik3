@@ -1,0 +1,23 @@
+uuid: 5e2716ed-a765-4ac4-9fb3-9feeea836750
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cpro_student
+    - node.type.cpro
+id: node.cpro.field_cpro_student
+field_name: field_cpro_student
+entity_type: node
+bundle: cpro
+label: Student
+description: 'Select if you are currently a student or fellow'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

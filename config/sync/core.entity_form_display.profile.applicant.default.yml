@@ -1,0 +1,100 @@
+uuid: ce684c19-d792-4302-b3b6-d8325bf2611b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.profile.applicant.field_appl_addr
+    - field.field.profile.applicant.field_appl_cjob
+    - field.field.profile.applicant.field_appl_comp_date
+    - field.field.profile.applicant.field_appl_degr_comp
+    - field.field.profile.applicant.field_appl_degr_majo
+    - field.field.profile.applicant.field_appl_degr_type
+    - field.field.profile.applicant.field_appl_stud
+    - field.field.profile.applicant.field_appl_ucont
+    - field.field.profile.applicant.field_appl_unam
+    - field.field.profile.applicant.field_appl_ustat
+    - profile.type.applicant
+  module:
+    - address
+    - content_moderation
+    - datetime
+id: profile.applicant.default
+targetEntityType: profile
+bundle: applicant
+mode: default
+content:
+  field_appl_addr:
+    weight: 103
+    settings:
+      default_country: null
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_appl_cjob:
+    weight: 104
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_appl_comp_date:
+    weight: 106
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_appl_degr_comp:
+    weight: 112
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_appl_degr_majo:
+    weight: 111
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_appl_degr_type:
+    weight: 110
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_appl_stud:
+    weight: 105
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_appl_ucont:
+    weight: 108
+    settings: {  }
+    third_party_settings: {  }
+    type: address_country_default
+    region: content
+  field_appl_unam:
+    weight: 107
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_appl_ustat:
+    weight: 109
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+hidden: {  }

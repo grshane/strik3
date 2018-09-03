@@ -1,0 +1,15 @@
+uuid: fde45cec-815a-44aa-ae0d-63f2da9ce281
+langcode: en
+status: true
+dependencies:
+  module:
+    - type_style
+third_party_settings:
+  type_style:
+    color: '#000000'
+    icon: ''
+name: 'Contact Preference'
+vid: contact_preference
+description: ''
+hierarchy: 0
+weight: 0
